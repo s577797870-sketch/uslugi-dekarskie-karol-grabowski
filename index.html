@@ -1118,6 +1118,53 @@ footer {
   .btn-primary::after { animation: none; display: none; }
   .ey::before { animation: none; }
 }
+
+/* ══════════════════════════════════════════════
+   MOBILE OVERFLOW FIX — GLOBAL
+   ══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .container, .header-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    overflow-x: hidden !important;
+  }
+  .hero, section {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .hero-grid, .hero-text, .hero-visual {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+  .ey {
+    display: block !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .h-hero {
+    font-size: clamp(1.6rem, 8.5vw, 2.4rem) !important;
+    word-break: break-word !important;
+  }
+  .trust-row {
+    flex-wrap: wrap !important;
+    max-width: 100% !important;
+  }
+  .btn-primary, .btn-ghost {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+}
 </style>
 </head>
 <body>
