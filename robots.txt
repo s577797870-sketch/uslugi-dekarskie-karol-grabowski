@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uslugi-dekarskie-karol-grabowski.pl/sitemap.xml
