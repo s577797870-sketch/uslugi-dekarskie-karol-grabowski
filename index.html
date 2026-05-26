@@ -399,8 +399,10 @@ header.scrolled {
   align-items: center;
   position: relative;
   z-index: 2;
+  min-width: 0;
 }
-.hero-text { position: relative; z-index: 2; }
+.hero-grid > * { min-width: 0; }
+.hero-text { position: relative; z-index: 2; min-width: 0; overflow-x: hidden; }
 
 /* Eyebrow */
 .ey {
@@ -1106,9 +1108,10 @@ footer {
   .trust-row { gap: 16px; }
   /* Fix horizontal overflow on small screens */
   .h-hero { font-size: clamp(1.75rem, 9vw, 2.6rem); }
-  .h-sub { font-size: 1rem; }
-  .ey { font-size: .62rem; letter-spacing: .08em; white-space: normal; overflow-wrap: break-word; }
-  .btn-primary, .btn-ghost { font-size: .9rem; padding: 14px 22px; }
+  .h-sub { font-size: 1rem; max-width: 100%; }
+  .ey { font-size: .6rem; letter-spacing: .06em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 100%; }
+  .trust-row { flex-wrap: wrap; }
+  .btn-primary, .btn-ghost { font-size: .9rem; padding: 14px 22px; max-width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   .rv, .rv-l, .rv-s { opacity: 1; transform: none; transition: none; }
