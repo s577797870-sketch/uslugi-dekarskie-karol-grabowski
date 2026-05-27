@@ -1182,6 +1182,46 @@ footer {
   }
 }
 </style>
+<style>
+/* ── MOBILE FIX (osobny blok – najwyższy priorytet kaskady) ── */
+@media screen and (max-width: 600px) {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+  .h-hero {
+    font-size: 25px !important;
+    letter-spacing: 0 !important;
+    word-break: break-all !important;
+    overflow-wrap: anywhere !important;
+    max-width: calc(100vw - 40px) !important;
+    white-space: normal !important;
+  }
+  .h-hero .accent-word {
+    font-size: inherit !important;
+  }
+  .ey {
+    font-size: 10px !important;
+    letter-spacing: .05em !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    max-width: calc(100vw - 40px) !important;
+    display: block !important;
+  }
+  .container, .header-inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+  .hero-grid, .hero-text, .hero-visual {
+    max-width: calc(100vw - 40px) !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+}
+</style>
 </head>
 <body>
 
