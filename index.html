@@ -285,12 +285,22 @@ header.scrolled {
   display: flex; align-items: center; justify-content: space-between;
 }
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--fd);
   font-weight: 700;
   font-size: clamp(.9rem, 1.4vw, 1.1rem);
   color: var(--w95);
   letter-spacing: -.02em;
   line-height: 1.2;
+}
+.logo-img {
+  height: 46px;
+  width: 46px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 .logo-sub {
   display: block;
@@ -1259,8 +1269,11 @@ footer {
 <header>
   <div class="header-inner">
     <div class="logo">
-      Usługi Dekarskie
-      <span class="logo-sub">Karol Grabowski</span>
+      <img src="images/logo.png" alt="Usługi Dekarskie Karol Grabowski" class="logo-img">
+      <div>
+        Usługi Dekarskie
+        <span class="logo-sub">Karol Grabowski</span>
+      </div>
     </div>
     <nav class="nav-links">
       <a href="#uslugi">Usługi</a>
