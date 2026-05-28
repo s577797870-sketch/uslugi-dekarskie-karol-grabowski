@@ -421,11 +421,6 @@ header.scrolled {
 
 /* Hero headline */
 @keyframes fadeUp { from{opacity:0;transform:translate3d(0,24px,0)} to{opacity:1;transform:none} }
-br.mob-nl { display: none; }
-.hl { display: inline; }
-@media (max-width: 768px) {
-  .hl { display: block; text-align: center !important; width: 100%; }
-}
 .h-hero {
   font-family: var(--fd);
   font-weight: 800;
@@ -434,6 +429,7 @@ br.mob-nl { display: none; }
   letter-spacing: .01em;
   color: var(--w95);
   text-align: center;
+  text-wrap: balance;
   width: 100%;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -1175,6 +1171,7 @@ footer {
     max-width: calc(100vw - 40px) !important;
     box-sizing: border-box !important;
     text-align: center !important;
+    text-wrap: balance !important;
   }
   .h-sub {
     max-width: calc(100vw - 40px) !important;
@@ -1217,6 +1214,7 @@ footer {
     white-space: normal !important;
     line-height: 1.15 !important;
     text-align: center !important;
+    text-wrap: balance !important;
   }
   .h-sub {
     text-align: center !important;
@@ -1302,7 +1300,7 @@ footer {
     <div class="hero-grid">
       <div class="hero-text">
         <div class="ey">Białystok · Pisz · Ełk · Olsztyn · Suwałki i okolice</div>
-        <h1 class="h-hero"><span class="hl">Budujemy i</span><span class="hl">remontujemy</span><span class="hl"><span class="accent-word">dachy</span> od 30 lat</span></h1>
+        <h1 class="h-hero">Budujemy i remontujemy <span class="accent-word">dachy</span> od 30 lat</h1>
         <p class="h-sub">Więźba, pokrycie, rynny, okna dachowe. Jeden telefon — wycena, materiał, montaż, gwarancja.</p>
         <div class="trust-row">
           <div class="trust-badge">
